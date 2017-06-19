@@ -1,10 +1,10 @@
 class Duti < Formula
   desc "Select default apps for documents and URL schemes on macOS"
-  homepage "https://github.com/russellhancox/duti"
-  url "https://github.com/russellhancox/duti/archive/master.tar.gz"
-  version "1.7"
-  sha256 "fbfaf180b3f24690e60a406d2dbca90b86e907f719a8ef4e9d38965fc0a44cea"
-  head "https://github.com/russellhancox/duti.git"
+  homepage "https://github.com/jorvi/duti"
+  url "https://github.com/jorvi/duti/archive/1.8.tar.gz"
+  version "1.8"
+  sha256 "b62b4a48e7e2f069b5668d48bfa13d8d0ea311607e30aa4184b847b14934681f"
+  head "https://github.com/jorvi/duti.git"
 
   def install
     bin.mkpath
@@ -16,5 +16,5 @@ class Duti < Formula
   test do
     system "#{bin}/duti", "-x", "txt"
   end
-  
+
 end
